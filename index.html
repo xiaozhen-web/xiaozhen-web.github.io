@@ -5,8 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        p{
+            font-size: 50px;
+        }
+    </style>
 </head>
 <body>
-    我是迷糊，我要买iPhone11 pro 128g
+    <p>李响小仙女</p>
+    <script>
+        var arr = ['red','skyblue','pink','purple','yellow'];
+        var p = document.querySelector("p");
+        var i = 0 ;
+            
+            setInterval(function(){
+                if(i == arr.length){
+                    i =0;
+                }
+                p.style.color =arr[i]
+                i++;
+                
+        },500)
+        
+        
+    
+    
+    </script>
 </body>
 </html>
